@@ -1,0 +1,85 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+.frame1{
+	opacity: 1;
+	.monkey_hop, .monkey_hop_shadow{
+		// transform-origin: 300px 600px;		
+		@include pos-scale(-210, 60, 0.4);
+		// @include pos-scale(-0, 70, 0.4);
+	}
+
+	.monkey_hop_shadow{
+		opacity: .1;
+	}
+}
+
+
+
+.frame2{
+	// opacity: 1;
+	.animalHolder{
+		@include pos(27, 40);
+
+	
+		width: 100%;
+		height: 100%;
+		.monkey_blink{			
+			@include pos-scale(0,0 , 0.4);
+		}
+
+		.monkey_blink_close{
+			@include pos-scale(0,0 , 0.4);
+			opacity: 0;
+		}
+	}
+}
+
+
+
+
+.frame3 {
+	// opacity: 1;
+	#cta{
+		width: 106px;
+		height: 27px;
+		background-color: #238700;
+		// border: 1px solid red;
+		
+		@include pos(96, 194);
+		border-radius: 6px;
+	}
+	
+	.cta_1, .cta_2{
+		// @include pos-scale(0, -10, .5);
+	}
+
+	.cta_2{
+		opacity: 0;
+	}
+
+	.tvMain{
+		@include pos-scale(53, 56, 0.63);
+		width: 199px;
+		.screen{
+			width: 186px;
+			@include pos(2, 2);
+		}
+	}
+
+	.monkey_popping_out{
+		transform-origin: 100% 50%;		
+		width: 203px;
+		@include pos-scale-rotate(-155, -40, .5, 0);
+	}
+}
+
+
+#banner{
+	width: 300px;
+	height: 250px;
+}
+
+
+

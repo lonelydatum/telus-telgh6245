@@ -1,0 +1,17 @@
+#cta{
+		width: 116px;
+		height: 32px;
+		background-color: #238700;
+		// border: 1px solid red;
+		@include pos(21, 434);
+		border-radius: 3px;
+	}
+
+	.tvMain{
+		@include pos-scale(-16, 314, 0.76);
+		width: 199px;
+		.screen{
+			width: 186px;
+			@include pos(2, 2);
+		}
+	}
